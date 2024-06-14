@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(52, 10px);
+    gap: 2px;
+}
+
+.week {
+    width: 10px;
+    height: 10px;
+    background-color: #e0e0e0;
+}
+
+.week.passed {
+    background-color: #ff6347;
+}
+
+.week.current {
+    background-color: #ffd700;
+}
